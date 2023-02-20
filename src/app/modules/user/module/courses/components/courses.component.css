@@ -1,0 +1,18 @@
+.body {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(235, 240, 250);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.course-body {
+    width: 95%;
+    background-color: white;
+    margin-top: 50px;
+}
+
+.btn {
+    width: 20px;
+}

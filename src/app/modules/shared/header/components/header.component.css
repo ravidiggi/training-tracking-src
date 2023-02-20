@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:wght@100&display=swap');
+
+.username {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.logo {
+    width: 165px;
+    height: 20px;
+}
+
+.navbar {
+    background-color: rgb(45, 60, 85);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.initials {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: orangered;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.username {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+}
+
+.dropdown {
+    padding: 0;
+}
+
+a {
+    /* padding: 10px; */
+    text-decoration: none;
+}
+
+/* 
+a:hover {} */
+
+
+/* .dropdown {
+    width: 20px;
+    height: 20px;
+} */
+
+nav {
+    background-color: rgb(45, 60, 85);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 0px 25px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: rgb(60, 80, 110);
+    color: #fff;
+}
+
+.icon {
+    font-size: 20px;
+    margin-top: 3px;
+    margin-right: 5px;
+}
+
+nav ul li a {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.course-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    padding: 10px;
+    background-color: #fff;
+}
+
+nav ul li:hover .course-dropdown {
+    display: block;
+}

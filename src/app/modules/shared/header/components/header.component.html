@@ -1,0 +1,41 @@
+<nav class="navbar">
+    <a href="#"><img class="logo" src="../../assets/logo.png" alt="Logo"></a>
+    <div class="user-info">
+        <div class="initials">{{ firstName[0] }}{{ lastName[0] }}</div>
+        <div class="username">
+            <span>{{ username }}</span>
+            <span>
+                <button class="dropdown" mat-icon-button [matMenuTriggerFor]="menu"><mat-icon
+                        class="dropdown">keyboard_arrow_down</mat-icon>
+                </button>
+                <mat-menu #menu="matMenu">
+                    <button mat-menu-item (click)="signOut()">
+                        <mat-icon>power_settings_new</mat-icon>
+                        <span>Sign Out</span>
+                    </button>
+                </mat-menu>
+            </span>
+        </div>
+    </div>
+</nav>
+
+<nav>
+    <ul>
+        <!-- <li><a href="#"><mat-icon class="icon">description</mat-icon>Courses<mat-icon
+                    class="dropdown">keyboard_arrow_down</mat-icon></a>
+            <ul class="course-dropdown">
+                <li><a href="#">Course</a></li>
+                <li><a href="#">Program</a></li>
+            </ul>
+        </li> -->
+        <li><a mat-button [matMenuTriggerFor]="menu1"><mat-icon class="icon">description</mat-icon> Courses</a>
+            <mat-menu #menu1="matMenu">
+                <button mat-menu-item>Course</button>
+                <button mat-menu-item>Program</button>
+            </mat-menu>
+        </li>
+        <li><a mat-button href="#"><mat-icon class="icon">groups</mat-icon> Batch</a></li>
+        <li><a mat-button href="#"><mat-icon class="icon">person</mat-icon> Teachers</a></li>
+        <li><a mat-button href="#"><mat-icon class="icon">person</mat-icon> Students</a></li>
+    </ul>
+</nav>
